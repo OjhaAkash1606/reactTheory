@@ -1,0 +1,261 @@
+Points : Reconciliation, "diffing" algorithm,
+
+
+1) What is feature of react?
+    The main features of React are:
+
+        JSX :                   JSX is a javascript XMl which allows us to write html inside the js.
+                                react does not allow to write html it allows only jsx.
+
+        Components :            React uses component-based architecture for developing applications.
+                                Components are independent and reusable bits of code.
+                                These components can be shared across various applications having similar functionality.
+                                The re-use of components increases the pace of development.
+                                
+        One-way Data Binding
+        Virtual DOM
+        Simplicity
+        Performance
+
+What are pros and cons of React JS?
+    -pros
+        -React JS improves application performance due to virtual dom.
+            (when we write a React component, we did not write directly to the DOM. Instead, 
+            we are writing virtual components that react will turn into the DOM, leading to smoother
+             and faster performance.)
+
+        -In React improves code readibility with the help of JSX.
+            (In JSX, we can write html and javascript together.)
+
+        -React can be conveniently used on clint side as well as server side.
+
+        -React is easy to integrate with other framework like Angular etc.
+
+        -React has a power to reuse component.
+
+        -React builds single page application.
+        -React JS follows uni-directional data flow or data binding.(uni-directional means data flow parent to child)
+
+    -Cons
+        -React is a library not a full-blown framework.
+            (React focused only on UI not on development so we need to choose other technology to developed a project)
+        
+        -React has poor documentation due to constantly updating technology.
+            (React technologies updating and accelerating so fast that there is no time to make proper documentation.)
+
+2) Advantages of React?
+        React is easy to learn and use
+        React follows the MVC architecture.
+        React uses Virtual DOM to improve efficiency.
+        Creating dynamic web applications is easy.
+        React is SEO-friendly.
+        React allows reusable components.
+        Support of handy tools
+        React has a rich set of libraries.
+        Scope for testing the codes.
+
+3) Limitation of ReactJs ?
+
+        React is just a library. It is not a complete framework.
+        It has a huge library which takes time to understand.
+        It may be difficult for the new programmers to understand and code.
+        React uses inline Templating and JSX, which may be difficult and act as a barrier.
+        It also makes the coding complex.
+
+4) What is JSX?
+        
+
+5) What is Reconciliation?
+    It is the process through which react updates the dom.
+
+6) What is React js?
+        React is a library of javascript.
+
+7) Differences between library and framework.
+        In library function or code is invoked by programmers but in
+        framework function or code is invoked by itself.
+        Library is not a software but framework is a software.
+
+8) Why learn react?
+         React builds UI(user interface) as fast as possible because it uses
+         virtual dom at place of real dom each time.
+         React is used to single page application.
+         React is a long term product because it is maintained by facebook.
+         ReactJS allows us to create reusable UI components.
+         Large community for your support.
+         Mobile app devlopment with react-native.
+        
+What is class and function component?
+         Class Component        
+                We can not used hooks in Class Component.
+        Function Component
+
+
+JSX stands for JavaScript XML.
+        JSX allows us to write HTML in React(also in JS).
+        
+        JSX makes it easier to write and add HTML in React.
+        
+        JSX allows us to write HTML elements in JavaScript and place them in the
+        
+        DOM without any createElement() and/or appendChild() methods.
+        
+        JSX converts HTML tags into react elements.
+        
+        Inserting a Large Block of HTML To write HTML on multiple lines, put the HTML inside parentheseslike
+        this().
+        
+        JSX follows XML rules, and therefore HTML elements must be properly
+        closed. 
+
+        JSX will throw an error if the HTML is not properly closed.<br />
+        Close empty elements with />
+      
+        The HTML code must be wrapped in ONE top level element. 
+        So if you like to write two headers, you must put them inside a parent
+        element, like a div element
+
+        JSX will throw an error if the HTML is not correct, or if the HTML
+        misses a parent element.
+
+State is Public or private in react?
+
+state can be used out side of component in react or not ?
+
+How many methods or phases in react?
+         There are 3 phases in React.
+              Mounting
+              Updating
+              Unmounting
+
+                There are 16 methods in React.
+                        Constructor life cycle method
+                        
+                        Render life cycle method
+                                We should never update setState in Render life cycle method
+
+                        ComponentDidMount life cycle method
+                                props and state are not effect on this life cycle method
+                                Here we can call API mostlly
+
+                        componentDidUpdate life cycle method
+                                Here we can call API with conditionlly
+                                If should component update is return true then Component Did
+                                Update life cycle is called. Whenever return false then not
+                                called.
+                        
+                        shouldComponentUpdate life cycle method
+
+                        componentWillUnmount life cycle method
+
+                                In Component Will Unmount life cycle child component must be
+                                class Component and whatever parent Component does not
+                                matter
+
+                                component Will Unmount method is called just before of
+                                component remove from dom.
+
+                                Whenever Component hide then component will unmount method
+                                called automatically.
+
+On which time runs life cycle method in react?
+         When components are loaded
+          When component's props and state are updated
+          When components are removed
+
+What is Hooks?
+         Hooks gives us to access to react features like state , pure
+            component , life cycle method in functional component. which is
+            inbuilted in class component.
+
+
+            useEffect
+                We can use useEffect more than one in one component.
+                useEffect is called at page page loaded and also at updatation of
+            state and props
+
+ What is React fragments ?
+
+        React fragments allow you to wrap multiple element without adding an
+            extra node to the dom.
+
+What is lifting state up ?
+
+What is the pure component ?
+        The components which do not re-render when the value of state and
+            props has been updated with the same value.
+            
+            If the value of previous state or props and new state or props is
+            the same ,then pure component did not re-rendered.        
+
+        pure component uses only in class component.
+
+        in props parent component must be pure component. {doubt}
+
+What is useMemo ?
+         useMemo uses at place of pure component in function component.
+         useMemo uses for improve performance.
+
+ What is Ref ?
+         Refs provide a way to access DOM nodes or React elements created in
+            the render method.
+
+        it is used in class component.
+
+        useRef is hook and it is used in function component as like Ref .
+
+What is forwardRef ?
+        React forwardRef is a method that allows parent components pass down
+            refs to their children.
+
+             Using forwardRef in React gives the child component a reference to a
+            DOM element created by its parent component.
+            .
+What is controlled component ?
+        When input fields are controlled through state in react is known as
+            controlled component.
+
+What is Uncontrolled component ?
+         Whenever input fields are not controlled through state in react it
+            is called uncontrolled component.
+
+ What HOC (High order component) ?
+         A higher-order component (HOC) is an advanced technique in React for
+            reusing component logic again and again.
+
+             A higher-order component is a function that takes a component and
+            returns a new component.
+
+  What is routing ?
+
+        Routing is a process in which user is directed to different pages
+            based on their reuest or action.
+
+          React router is a collection of navigational components that compose
+            declaratively with your application.
+
+ What is API ?
+         Api is a software intermediary that allows two application to talk
+            to each other.
+
+        API is worked as messanger that delivers your request to the
+            provider that you're requesting it from and then delivers the
+            response back to you.
+
+             Methods of API
+                 Get method uses for call API
+              Post method uses for store data
+              Put method uses for update API 
+              Delet method uses for delet API
+
+What is postman ?
+
+ What is Context?
+        In React, Context provides a way to pass data without passing props
+            mannually at every level top to bottom.
+
+What is redux ?
+         A container where you can store your whole application data and it
+            is works as a state management.
+
+
